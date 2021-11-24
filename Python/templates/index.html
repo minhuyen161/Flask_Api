@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Microblog</title>
+    </head>
+    <body>
+        {% for temp in post %}
+            <h1>
+                {{ temp.title}}
+            </h1>
+            <p>
+                By {{ temp.author }} on {{ temp.date_post}}
+            </p>
+            <p>{{temp.content}}</p>
+        {% endfor %}
+    </body>
+</html>
